@@ -1,0 +1,16 @@
+<mat-toolbar>
+  <div class="flex justify-space-between align-center">
+    <p>Idle user timeout</p>
+    <button
+      (click)="login()"
+      *ngIf="!isLoggedIn"
+      mat-flat-button
+      color="primary"
+    >
+      Login
+    </button>
+    <button (click)="logout()" *ngIf="isLoggedIn" mat-flat-button color="warn">
+      Logout
+    </button>
+  </div>
+</mat-toolbar>
